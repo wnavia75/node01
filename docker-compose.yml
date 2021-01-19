@@ -1,0 +1,19 @@
+version: "3"
+services:
+    web:
+        container_name: sis-vsalome
+        restart: always
+        build: .
+        ports:
+            - "3000:3000"
+        depends_on:
+        - mongo
+    mongo:
+        container_name: bd-mongo-vsalome
+        restart: always
+        image: mongo:4.4.3-bionic
+        volumes:
+        - ./backup:/backup
+        ports:
+            - "27018:27017"
+

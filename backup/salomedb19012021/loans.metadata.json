@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_","ns":"salomedb.loans"},{"v":{"$numberInt":"2"},"unique":true,"key":{"code":{"$numberInt":"1"}},"name":"code_1","ns":"salomedb.loans","background":true}],"uuid":"40a1435d5975416b952dd7a06c970b75","collectionName":"loans"}
